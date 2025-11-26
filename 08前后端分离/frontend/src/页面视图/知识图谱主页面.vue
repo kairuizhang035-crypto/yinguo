@@ -859,13 +859,43 @@ export default {
           }
 
           // 2) 若未取得方法或为空，则回退到参数详情接口（/api/parameters/{id}/details）
-          if (!methods || Object.keys(methods).length === 0) {
-            const pResp = await store.getParameterDetails(nodeId)
-            const pData = pResp?.data ?? pResp ?? {}
-            data = pData
-            methods = pData.methods || {}
-            methodEstimates = pData.method_estimates || {}
-            stability = pData.parameter_stability || {}
+          const hasCPTInMethods = (mm) => {
+            if (!mm || typeof mm !== 'object') return false
+            return ['MLE','Bayesian','EM','SEM'].some(k => {
+              const md = mm[k] || {}
+              const c = md.cpt_data || md.cpt
+              if (!c) return false
+              if (Array.isArray(c)) return c.length > 0
+              if (typeof c === 'object') {
+                if (Array.isArray(c.table)) return c.table.length > 0
+                return Object.keys(c).length > 0
+              }
+              return false
+            })
+          }
+          if (!methods || Object.keys(methods).length === 0 || !hasCPTInMethods(methods)) {
+            const incoming = edges.value.filter(e => e.target === nodeId)
+            const candidates = Array.from(new Set(incoming.map(e => `${e.source}->${nodeId}`)))
+            let chosen = null
+            let pResp = null
+            let pData = null
+            for (const k of candidates) {
+              try {
+                pResp = await store.getParameterDetails(k)
+                pData = pResp?.data ?? pResp ?? {}
+                const m2 = pData.methods || {}
+                if (hasCPTInMethods(m2)) { chosen = k; data = pData; methods = m2; methodEstimates = pData.method_estimates || {}; stability = pData.parameter_stability || {}; break }
+              } catch (_) {}
+            }
+            if (!chosen) {
+              try {
+                const directResp = await store.getParameterDetails(nodeId)
+                const directData = directResp?.data ?? directResp ?? {}
+                const m3 = directData.methods || {}
+                if (Object.keys(m3).length) { data = directData; methods = m3; methodEstimates = directData.method_estimates || {}; stability = directData.parameter_stability || {} }
+              } catch (_) {}
+            }
+            console.log('CPT调试: 回退参数详情', { nodeId, candidates, chosen })
           }
 
           const fmt4 = (v) => {
@@ -879,6 +909,7 @@ export default {
           const parentFallback = Array.from(new Set(
             edges.value.filter(e => e.target === nodeId).map(e => e.source)
           ))
+          console.log('CPT调试: 父节点缺省列表', { nodeId, parentFallback })
 
           const renderCPTTable = (cpt, m) => {
             if (!cpt) return '<p class="empty">无CPT数据</p>'
@@ -971,6 +1002,16 @@ export default {
               if (pVal) items.push(`<li class="kv-item"><span class="kv-label">父节点</span><span class="kv-value">${pVal}</span></li>`)
               return items.length ? `<ul class="kv-grid" role="list">${items.join('')}</ul>` : ''
             })()
+            const cptRowCount = (() => {
+              if (!cpt) return 0
+              if (Array.isArray(cpt)) return cpt.length
+              if (typeof cpt === 'object') {
+                if (Array.isArray(cpt.table)) return cpt.table.length
+                return Object.keys(cpt).length
+              }
+              return 0
+            })()
+            console.log('CPT调试: 方法CPT状态', { nodeId, method: m, hasCPT: !!cpt, rows: cptRowCount })
             cptHtml += `
               <div class="detail-section">
                 <h4>${m} 条件概率表（CPT）</h4>
@@ -1433,6 +1474,7 @@ export default {
         }
         if (!resp) throw lastErr || new Error('无法获取参数详情')
         const data = resp?.data ?? resp ?? {}
+        console.log('CPT调试: 参数详情键解析', { rawKey, candidates, useKey })
         const sourceTag = data.source || 'Theta'
         const avail = data.available_methods || {}
         const summaries = data.method_summaries || {}
@@ -1899,6 +1941,16 @@ export default {
         methodsOrder.forEach(m => {
           const mdata = methods[m] || {}
           const cpt = mdata.cpt_data || mdata.cpt || null
+          const cptRowCount = (() => {
+            if (!cpt) return 0
+            if (Array.isArray(cpt)) return cpt.length
+            if (typeof cpt === 'object') {
+              if (Array.isArray(cpt.table)) return cpt.table.length
+              return Object.keys(cpt).length
+            }
+            return 0
+          })()
+          console.log('CPT调试: 参数方法CPT状态', { key: useKey ?? primary, method: m, hasCPT: !!cpt, rows: cptRowCount })
           const head = `
             <div class="method-header">
               <h4>${m} 方法</h4>
