@@ -1,0 +1,943 @@
+{
+  "疾病_高血压": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_总蛋白",
+      "药物_阿卡波糖片"
+    ],
+    "coefficients": [
+      0.3738417014306082,
+      0.34506591142216275
+    ],
+    "intercept": 7.180730111444332e-17,
+    "coefficient_std_errors": [
+      0.12376122386912955,
+      0.12376122386912952
+    ],
+    "intercept_std_error": 0.12273200663349065,
+    "t_statistics": {
+      "intercept": 5.850739597933765e-16,
+      "coefficients": [
+        3.020669073424197,
+        2.7881585252182894
+      ]
+    },
+    "r_squared": 0.29203216374269003,
+    "adjusted_r_squared": 0.2619058728381237,
+    "residual_variance": 0.7079678362573101,
+    "mse": 0.7079678362573101,
+    "rmse": 0.8414082458933416,
+    "mae": 0.7122807017543858,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "疾病_高脂血症": {
+    "type": "structural_equation",
+    "parents": [
+      "药物_阿托伐他汀钙片",
+      "检验_钠",
+      "疾病_混合痔"
+    ],
+    "coefficients": [
+      0.4403030259298888,
+      0.14155653450807643,
+      -0.23333508255642257
+    ],
+    "intercept": 6.883731301960413e-17,
+    "coefficient_std_errors": [
+      0.12441312229886509,
+      0.12499044847289771,
+      0.1283097605943652
+    ],
+    "intercept_std_error": 0.12079553362121732,
+    "t_statistics": {
+      "intercept": 5.698663763137108e-16,
+      "coefficients": [
+        3.5390400770763817,
+        1.1325388158661644,
+        -1.8185294826796647
+      ]
+    },
+    "r_squared": 0.32878819662960634,
+    "adjusted_r_squared": 0.2850135138011024,
+    "residual_variance": 0.6712118033703937,
+    "mse": 0.6712118033703937,
+    "rmse": 0.8192751695067987,
+    "mae": 0.615175779258529,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "疾病_糖尿病": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_反流性食管炎",
+      "药物_阿司匹林肠溶片",
+      "检验_葡萄糖",
+      "检验_谷草/谷丙"
+    ],
+    "coefficients": [
+      -0.29954055804545143,
+      0.356352203946537,
+      0.3715724131189206,
+      0.0
+    ],
+    "intercept": 4.557696875041438e-17,
+    "coefficient_std_errors": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ],
+    "intercept_std_error": null,
+    "t_statistics": {
+      "intercept": null,
+      "coefficients": []
+    },
+    "r_squared": 0.4654717875549782,
+    "adjusted_r_squared": 0.41795816867097624,
+    "residual_variance": 0.5345282124450218,
+    "mse": 0.5345282124450218,
+    "rmse": 0.731114363451452,
+    "mae": 0.569288173829717,
+    "sample_size": 50,
+    "degrees_of_freedom": 45
+  },
+  "疾病_冠状动脉粥样硬化性心脏病": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_葡萄糖",
+      "药物_阿卡波糖片"
+    ],
+    "coefficients": [
+      -0.28006684611371097,
+      0.2338920312019361
+    ],
+    "intercept": -1.0280128732057644e-16,
+    "coefficient_std_errors": [
+      0.14607268727109868,
+      0.1460726872710985
+    ],
+    "intercept_std_error": 0.13893952815529673,
+    "t_statistics": {
+      "intercept": -7.398994993395434e-16,
+      "coefficients": [
+        -1.9173115203524007,
+        1.6012030419338583
+      ]
+    },
+    "r_squared": 0.0927029532512249,
+    "adjusted_r_squared": 0.054094568283191924,
+    "residual_variance": 0.9072970467487751,
+    "mse": 0.9072970467487751,
+    "rmse": 0.9525214153754104,
+    "mae": 0.6256654747715534,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "疾病_反流性食管炎": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高脂血症"
+    ],
+    "coefficients": [
+      0.4364357804719849
+    ],
+    "intercept": -1.5505313672007933e-17,
+    "coefficient_std_errors": [
+      0.12986562041232988
+    ],
+    "intercept_std_error": 0.1298656204123299,
+    "t_statistics": {
+      "intercept": -1.1939506100827747e-16,
+      "coefficients": [
+        3.3606722016672257
+      ]
+    },
+    "r_squared": 0.1904761904761907,
+    "adjusted_r_squared": 0.17361111111111127,
+    "residual_variance": 0.8095238095238093,
+    "mse": 0.8095238095238093,
+    "rmse": 0.8997354108424372,
+    "mae": 0.6476190476190478,
+    "sample_size": 50,
+    "degrees_of_freedom": 48
+  },
+  "疾病_动脉硬化": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高脂血症",
+      "检验_总蛋白"
+    ],
+    "coefficients": [
+      0.42613636363636376,
+      0.05113636363636356
+    ],
+    "intercept": 1.6173930881471028e-17,
+    "coefficient_std_errors": [
+      0.1317288390286158,
+      0.13172883902861582
+    ],
+    "intercept_std_error": 0.13157940184037512,
+    "t_statistics": {
+      "intercept": 1.2292145013010737e-16,
+      "coefficients": [
+        3.2349511828901267,
+        0.38819414194681445
+      ]
+    },
+    "r_squared": 0.1862824675324677,
+    "adjusted_r_squared": 0.15165618955512583,
+    "residual_variance": 0.8137175324675325,
+    "mse": 0.8137175324675325,
+    "rmse": 0.9020629315449852,
+    "mae": 0.5966275498952247,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "疾病_脂肪肝": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_动脉硬化",
+      "疾病_高尿酸血症"
+    ],
+    "coefficients": [
+      0.5168511011120928,
+      -0.03720930232558134
+    ],
+    "intercept": 2.119522320602287e-17,
+    "coefficient_std_errors": [
+      0.12727973593915787,
+      0.12727973593915792
+    ],
+    "intercept_std_error": 0.12532476217042998,
+    "t_statistics": {
+      "intercept": 1.6912238921466569e-16,
+      "coefficients": [
+        4.060749319586563,
+        -0.29234270523131883
+      ]
+    },
+    "r_squared": 0.2618040873854828,
+    "adjusted_r_squared": 0.23039149535933312,
+    "residual_variance": 0.7381959126145173,
+    "mse": 0.7381959126145173,
+    "rmse": 0.859183282317875,
+    "mae": 0.4797705555380504,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "疾病_混合痔": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高脂血症",
+      "检验_尿酸",
+      "检验_葡萄糖"
+    ],
+    "coefficients": [
+      -0.27271503616786885,
+      -0.3053821783830328,
+      -0.2384003197560964
+    ],
+    "intercept": -4.826832118885415e-17,
+    "coefficient_std_errors": [
+      0.1259647103130485,
+      0.12686788023536422,
+      0.12686589648341576
+    ],
+    "intercept_std_error": 0.12273660077680311,
+    "t_statistics": {
+      "intercept": -3.932675410868698e-16,
+      "coefficients": [
+        -2.1650114185958533,
+        -2.407088207168673,
+        -1.8791521312211807
+      ]
+    },
+    "r_squared": 0.3070434341687599,
+    "adjusted_r_squared": 0.26185061465802695,
+    "residual_variance": 0.6929565658312399,
+    "mse": 0.6929565658312399,
+    "rmse": 0.8324401274753878,
+    "mae": 0.7053106093922665,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "疾病_高尿酸血症": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_糖尿病",
+      "药物_阿托伐他汀钙片"
+    ],
+    "coefficients": [
+      0.4540387158000224,
+      0.20341995145379554
+    ],
+    "intercept": 7.095530380748908e-17,
+    "coefficient_std_errors": [
+      0.12645245181430165,
+      0.12645245181430162
+    ],
+    "intercept_std_error": 0.12645078470881493,
+    "t_statistics": {
+      "intercept": 5.611298021667615e-16,
+      "coefficients": [
+        3.59058847247018,
+        1.6086675152216305
+      ]
+    },
+    "r_squared": 0.24847935518667208,
+    "adjusted_r_squared": 0.21649975327972193,
+    "residual_variance": 0.7515206448133278,
+    "mse": 0.7515206448133278,
+    "rmse": 0.8669029039133089,
+    "mae": 0.4884306064272204,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "疾病_心律失常": {
+    "type": "exogenous_variable",
+    "parents": [],
+    "mean": -4.884981308350689e-17,
+    "variance": 1.020408163265308,
+    "standard_deviation": 1.0101525445522117,
+    "sample_size": 50
+  },
+  "药物_氯化钠注射液": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_反流性食管炎",
+      "药物_肝素钠注射液"
+    ],
+    "coefficients": [
+      0.19829059829059836,
+      0.44273504273504277
+    ],
+    "intercept": -4.344293206272557e-17,
+    "coefficient_std_errors": [
+      0.12892300680592414,
+      0.12892300680592408
+    ],
+    "intercept_std_error": 0.12859370101445583,
+    "t_statistics": {
+      "intercept": -3.3783094910567927e-16,
+      "coefficients": [
+        1.5380544031919579,
+        3.434104227816527
+      ]
+    },
+    "r_squared": 0.22279202279202281,
+    "adjusted_r_squared": 0.18971934291083237,
+    "residual_variance": 0.7772079772079772,
+    "mse": 0.7772079772079772,
+    "rmse": 0.8815939979423506,
+    "mae": 0.4663247863247863,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "药物_艾司唑仑片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_反流性食管炎",
+      "疾病_心律失常",
+      "检验_谷草/谷丙"
+    ],
+    "coefficients": [
+      0.4308202184276645,
+      0.08206099398622176,
+      0.0
+    ],
+    "intercept": 2.6213124710176848e-17,
+    "coefficient_std_errors": [
+      NaN,
+      NaN,
+      NaN
+    ],
+    "intercept_std_error": null,
+    "t_statistics": {
+      "intercept": null,
+      "coefficients": []
+    },
+    "r_squared": 0.19234006734006726,
+    "adjusted_r_squared": 0.13966659347094112,
+    "residual_variance": 0.8076599326599327,
+    "mse": 0.8076599326599327,
+    "rmse": 0.8986990222871797,
+    "mae": 0.524916824865199,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "药物_阿司匹林肠溶片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高血压",
+      "疾病_高脂血症",
+      "检验_钠",
+      "疾病_糖尿病"
+    ],
+    "coefficients": [
+      -0.00147090411149259,
+      0.20898101283141046,
+      0.20930081897229416,
+      0.5034907720040956
+    ],
+    "intercept": -6.780414728441762e-17,
+    "coefficient_std_errors": [
+      0.11871702498726945,
+      0.12053493497052277,
+      0.12083758842138308,
+      0.11913374152531157
+    ],
+    "intercept_std_error": 0.1180541239034363,
+    "t_statistics": {
+      "intercept": -5.743479773724702e-16,
+      "coefficients": [
+        -0.012390001447983736,
+        1.7337796123797427,
+        1.7320837142365288,
+        4.226265082903673
+      ]
+    },
+    "r_squared": 0.3728450723226451,
+    "adjusted_r_squared": 0.3170979676402135,
+    "residual_variance": 0.627154927677355,
+    "mse": 0.627154927677355,
+    "rmse": 0.7919311382167992,
+    "mae": 0.568269130222472,
+    "sample_size": 50,
+    "degrees_of_freedom": 45
+  },
+  "药物_盐酸羟考酮缓释片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_糖尿病"
+    ],
+    "coefficients": [
+      0.32732683535398854
+    ],
+    "intercept": -4.525576650575423e-17,
+    "coefficient_std_errors": [
+      0.1363861813974953
+    ],
+    "intercept_std_error": 0.13638618139749523,
+    "t_statistics": {
+      "intercept": -3.318207610333855e-16,
+      "coefficients": [
+        2.3999999999999986
+      ]
+    },
+    "r_squared": 0.10714285714285698,
+    "adjusted_r_squared": 0.08854166666666652,
+    "residual_variance": 0.8928571428571428,
+    "mse": 0.8928571428571428,
+    "rmse": 0.944911182523068,
+    "mae": 0.3499271061118826,
+    "sample_size": 50,
+    "degrees_of_freedom": 48
+  },
+  "药物_阿托伐他汀钙片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高脂血症"
+    ],
+    "coefficients": [
+      0.4905369335242763
+    ],
+    "intercept": -9.736343050989676e-17,
+    "coefficient_std_errors": [
+      0.12577870090366056
+    ],
+    "intercept_std_error": 0.12577870090366058,
+    "t_statistics": {
+      "intercept": -7.740851973377565e-16,
+      "coefficients": [
+        3.900000000000001
+      ]
+    },
+    "r_squared": 0.24062648315139978,
+    "adjusted_r_squared": 0.22480620155038722,
+    "residual_variance": 0.7593735168486002,
+    "mse": 0.7593735168486002,
+    "rmse": 0.8714204019005982,
+    "mae": 0.5269855247581576,
+    "sample_size": 50,
+    "degrees_of_freedom": 48
+  },
+  "药物_苯磺酸氨氯地平片": {
+    "type": "structural_equation",
+    "parents": [
+      "药物_硫酸氢氯吡格雷片",
+      "检验_总蛋白",
+      "疾病_高血压"
+    ],
+    "coefficients": [
+      0.4514159385198439,
+      0.20482807044135692,
+      0.1596203969662899
+    ],
+    "intercept": -3.5003943676085737e-17,
+    "coefficient_std_errors": [
+      0.12178131230120422,
+      0.13383361511283148,
+      0.1335383488447737
+    ],
+    "intercept_std_error": 0.12126031897856297,
+    "t_statistics": {
+      "intercept": -2.886677519153971e-16,
+      "coefficients": [
+        3.7067751200064882,
+        1.5304680387559728,
+        1.1953150413132203
+      ]
+    },
+    "r_squared": 0.3236130118959889,
+    "adjusted_r_squared": 0.27950081701964036,
+    "residual_variance": 0.6763869881040107,
+    "mse": 0.6763869881040107,
+    "rmse": 0.8224274971716417,
+    "mae": 0.41258907131835826,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "药物_阿卡波糖片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_糖尿病",
+      "疾病_高血压"
+    ],
+    "coefficients": [
+      0.4413418274938962,
+      0.35386069477175325
+    ],
+    "intercept": -5.986749330626686e-17,
+    "coefficient_std_errors": [
+      0.11826685515679007,
+      0.11826685515679
+    ],
+    "intercept_std_error": 0.11779660734950191,
+    "t_statistics": {
+      "intercept": -5.082276531839353e-16,
+      "coefficients": [
+        3.731745694165923,
+        2.992052966172384
+      ]
+    },
+    "r_squared": 0.34782608695652184,
+    "adjusted_r_squared": 0.32007400555041643,
+    "residual_variance": 0.6521739130434782,
+    "mse": 0.6521739130434783,
+    "rmse": 0.8075728530872482,
+    "mae": 0.5897678246195885,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "药物_碳酸钙片": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_心律失常",
+      "疾病_高血压",
+      "检验_磷"
+    ],
+    "coefficients": [
+      0.197495558665236,
+      0.1227650553174249,
+      0.36264153144521577
+    ],
+    "intercept": -6.456962237950171e-17,
+    "coefficient_std_errors": [
+      0.1349570436870775,
+      0.13476731549811025,
+      0.13739402821234195
+    ],
+    "intercept_std_error": 0.13202379164374523,
+    "t_statistics": {
+      "intercept": -4.890756550435792e-16,
+      "coefficients": [
+        1.4633957092537195,
+        0.9109408676998271,
+        2.6394271728080834
+      ]
+    },
+    "r_squared": 0.19820704824041113,
+    "adjusted_r_squared": 0.14591620356043788,
+    "residual_variance": 0.8017929517595884,
+    "mse": 0.8017929517595884,
+    "rmse": 0.8954289205512564,
+    "mae": 0.3632707578697568,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "药物_硫酸氢氯吡格雷片": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_尿酸",
+      "检验_谷草/谷丙"
+    ],
+    "coefficients": [
+      0.28439822949726057,
+      0.0
+    ],
+    "intercept": -1.9648471703285196e-17,
+    "coefficient_std_errors": [
+      NaN,
+      NaN
+    ],
+    "intercept_std_error": null,
+    "t_statistics": {
+      "intercept": null,
+      "coefficients": []
+    },
+    "r_squared": 0.08088235294117652,
+    "adjusted_r_squared": 0.04177096370463085,
+    "residual_variance": 0.9191176470588229,
+    "mse": 0.9191176470588229,
+    "rmse": 0.9587062360592127,
+    "mae": 0.3602190798210556,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "药物_肝素钠注射液": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_氯",
+      "药物_氯化钠注射液"
+    ],
+    "coefficients": [
+      0.24549512651549155,
+      0.37500000000000006
+    ],
+    "intercept": 2.8355745327491906e-18,
+    "coefficient_std_errors": [
+      0.1302105496265282,
+      0.13021054962652817
+    ],
+    "intercept_std_error": 0.12707248487919745,
+    "t_statistics": {
+      "intercept": 2.2314622519933044e-17,
+      "coefficients": [
+        1.8853704804996543,
+        2.879950979974976
+      ]
+    },
+    "r_squared": 0.2410714285714286,
+    "adjusted_r_squared": 0.20877659574468088,
+    "residual_variance": 0.7589285714285716,
+    "mse": 0.7589285714285716,
+    "rmse": 0.8711650655464621,
+    "mae": 0.3517857142857144,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_碳酸氢盐": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_尿酸",
+      "疾病_高血压"
+    ],
+    "coefficients": [
+      0.346951914213913,
+      0.2240431107421848
+    ],
+    "intercept": 4.2802777376794477e-17,
+    "coefficient_std_errors": [
+      0.13298236803733723,
+      0.1329823680373372
+    ],
+    "intercept_std_error": 0.13297496016790344,
+    "t_statistics": {
+      "intercept": 3.2188599509824037e-16,
+      "coefficients": [
+        2.609006888165053,
+        1.684758017538691
+      ]
+    },
+    "r_squared": 0.16893001851219125,
+    "adjusted_r_squared": 0.1335653384488802,
+    "residual_variance": 0.8310699814878088,
+    "mse": 0.8310699814878088,
+    "rmse": 0.9116303974132328,
+    "mae": 0.7290715060640903,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_葡萄糖": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_混合痔",
+      "检验_氯",
+      "疾病_糖尿病"
+    ],
+    "coefficients": [
+      -0.26341870502401626,
+      -0.16895797655280523,
+      0.43420314253647607
+    ],
+    "intercept": -9.661744071552149e-17,
+    "coefficient_std_errors": [
+      0.12494246849860029,
+      0.12115000635781044,
+      0.12412949307230726
+    ],
+    "intercept_std_error": 0.12009123938312762,
+    "t_statistics": {
+      "intercept": -8.045336296953555e-16,
+      "coefficients": [
+        -2.1083199987117855,
+        -1.3946179751224805,
+        3.4979853038112894
+      ]
+    },
+    "r_squared": 0.33659233427751933,
+    "adjusted_r_squared": 0.2933266169477923,
+    "residual_variance": 0.6634076657224804,
+    "mse": 0.6634076657224804,
+    "rmse": 0.8144984135788604,
+    "mae": 0.614298414760455,
+    "sample_size": 50,
+    "degrees_of_freedom": 46
+  },
+  "检验_钾": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_谷草/谷丙",
+      "疾病_高血压"
+    ],
+    "coefficients": [
+      0.0,
+      0.3368607684266077
+    ],
+    "intercept": 3.089826518590003e-17,
+    "coefficient_std_errors": [
+      NaN,
+      NaN
+    ],
+    "intercept_std_error": null,
+    "t_statistics": {
+      "intercept": null,
+      "coefficients": []
+    },
+    "r_squared": 0.11347517730496481,
+    "adjusted_r_squared": 0.07575071676475054,
+    "residual_variance": 0.8865248226950351,
+    "mse": 0.8865248226950351,
+    "rmse": 0.9415544714433866,
+    "mae": 0.4210759605332596,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_尿酸": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_混合痔",
+      "检验_碳酸氢盐"
+    ],
+    "coefficients": [
+      -0.34290974687781334,
+      0.2669748048516442
+    ],
+    "intercept": -1.1132383556947267e-16,
+    "coefficient_std_errors": [
+      0.13138012946348332,
+      0.13138012946348324
+    ],
+    "intercept_std_error": 0.1279707649823177,
+    "t_statistics": {
+      "intercept": -8.699161529967786e-16,
+      "coefficients": [
+        -2.6100579157453487,
+        2.0320790209439483
+      ]
+    },
+    "r_squared": 0.2303037155624995,
+    "adjusted_r_squared": 0.1975506821821803,
+    "residual_variance": 0.7696962844375005,
+    "mse": 0.7696962844375005,
+    "rmse": 0.877323363667867,
+    "mae": 0.7515409350455218,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_氯": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_钠",
+      "检验_总蛋白"
+    ],
+    "coefficients": [
+      0.42045454545454536,
+      0.32954545454545453
+    ],
+    "intercept": 9.184572294626296e-18,
+    "coefficient_std_errors": [
+      0.12458168090518751,
+      0.1245816809051875
+    ],
+    "intercept_std_error": 0.12444035166978196,
+    "t_statistics": {
+      "intercept": 7.380702618872942e-17,
+      "coefficients": [
+        3.3749307474389507,
+        2.6452159912359354
+      ]
+    },
+    "r_squared": 0.2721861471861471,
+    "adjusted_r_squared": 0.24121534493874897,
+    "residual_variance": 0.7278138528138532,
+    "mse": 0.7278138528138532,
+    "rmse": 0.8531200694004645,
+    "mae": 0.5336419315771088,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_钠": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_氯"
+    ],
+    "coefficients": [
+      0.40476190476190493
+    ],
+    "intercept": 7.930164461608257e-18,
+    "coefficient_std_errors": [
+      0.13198546325049682
+    ],
+    "intercept_std_error": 0.1319854632504968,
+    "t_statistics": {
+      "intercept": 6.008362031928853e-17,
+      "coefficients": [
+        3.0667157942515413
+      ]
+    },
+    "r_squared": 0.16383219954648487,
+    "adjusted_r_squared": 0.14641203703703665,
+    "residual_variance": 0.8361678004535154,
+    "mse": 0.8361678004535154,
+    "rmse": 0.9144221128415013,
+    "mae": 0.6130883582820741,
+    "sample_size": 50,
+    "degrees_of_freedom": 48
+  },
+  "检验_镁": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_尿酸"
+    ],
+    "coefficients": [
+      0.35200125156223067
+    ],
+    "intercept": 8.636660292490788e-17,
+    "coefficient_std_errors": [
+      0.13509989505444228
+    ],
+    "intercept_std_error": 0.13509989505444225,
+    "t_statistics": {
+      "intercept": 6.392795707954033e-16,
+      "coefficients": [
+        2.605488712040686
+      ]
+    },
+    "r_squared": 0.12390488110137698,
+    "adjusted_r_squared": 0.10565289945765566,
+    "residual_variance": 0.876095118898623,
+    "mse": 0.876095118898623,
+    "rmse": 0.9359995293260691,
+    "mae": 0.41612212570345647,
+    "sample_size": 50,
+    "degrees_of_freedom": 48
+  },
+  "检验_磷": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_尿酸",
+      "检验_碳酸氢盐"
+    ],
+    "coefficients": [
+      0.45798648962722527,
+      -0.3075716606466578
+    ],
+    "intercept": 1.0312622930559474e-16,
+    "coefficient_std_errors": [
+      0.13834425263221498,
+      0.13834425263221492
+    ],
+    "intercept_std_error": 0.12987126712456404,
+    "t_statistics": {
+      "intercept": 7.940650121376177e-16,
+      "coefficients": [
+        3.310484396086709,
+        -2.2232341047396464
+      ]
+    },
+    "r_squared": 0.20727233684662594,
+    "adjusted_r_squared": 0.17353924479754612,
+    "residual_variance": 0.792727663153374,
+    "mse": 0.792727663153374,
+    "rmse": 0.8903525499224304,
+    "mae": 0.49551680738278947,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_总蛋白": {
+    "type": "structural_equation",
+    "parents": [
+      "疾病_高血压",
+      "检验_碳酸氢盐"
+    ],
+    "coefficients": [
+      0.4603437192808444,
+      -0.19099993731531667
+    ],
+    "intercept": -2.5580093075334112e-17,
+    "coefficient_std_errors": [
+      0.1329455452783602,
+      0.13294554527836017
+    ],
+    "intercept_std_error": 0.12967692770458042,
+    "t_statistics": {
+      "intercept": -1.972601720917435e-16,
+      "coefficients": [
+        3.4626486981341182,
+        -1.4366779790582884
+      ]
+    },
+    "r_squared": 0.2096430377917481,
+    "adjusted_r_squared": 0.17601082663395018,
+    "residual_variance": 0.7903569622082519,
+    "mse": 0.7903569622082519,
+    "rmse": 0.8890202259837804,
+    "mae": 0.726427157367539,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  },
+  "检验_谷草/谷丙": {
+    "type": "structural_equation",
+    "parents": [
+      "检验_钠",
+      "药物_氯化钠注射液"
+    ],
+    "coefficients": [
+      0.0,
+      0.0
+    ],
+    "intercept": 0.0,
+    "coefficient_std_errors": [
+      0.0,
+      0.0
+    ],
+    "intercept_std_error": 0.0,
+    "t_statistics": {
+      "intercept": null,
+      "coefficients": [
+        NaN,
+        NaN
+      ]
+    },
+    "r_squared": 1.0,
+    "adjusted_r_squared": 1.0,
+    "residual_variance": 0.0,
+    "mse": 0.0,
+    "rmse": 0.0,
+    "mae": 0.0,
+    "sample_size": 50,
+    "degrees_of_freedom": 47
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "metadata": {
+    "analysis_time": "2025-10-30 17:01:53",
+    "total_edges": 63,
+    "core_edges_count": 26,
+    "filtering_criteria": {
+      "confidence_threshold": 0.6,
+      "quality_threshold": 0.6
+    }
+  },
+  "core_edges": {
+    "疾病_动脉硬化 -> 疾病_脂肪肝": {
+      "source": "疾病_动脉硬化",
+      "target": "疾病_脂肪肝",
+      "confidence": 0.8964224031634515,
+      "quality_adjusted_confidence": 0.78436960276802,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 1.0,
+        "parameter_fitting": 0.8746734126538058,
+        "mediation_support": 1.1910162,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.35,
+        "parameter_fitting": 0.21866835316345146,
+        "mediation_support": 0.29775405,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "疾病_反流性食管炎 -> 药物_艾司唑仑片": {
+      "source": "疾病_反流性食管炎",
+      "target": "药物_艾司唑仑片",
+      "confidence": 0.8512300881206609,
+      "quality_adjusted_confidence": 0.7448263271055783,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 1.0,
+        "parameter_fitting": 0.6291441524826441,
+        "mediation_support": 1.1477761999999998,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.35,
+        "parameter_fitting": 0.15728603812066103,
+        "mediation_support": 0.28694404999999995,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "疾病_高血压 -> 检验_总蛋白": {
+      "source": "疾病_高血压",
+      "target": "检验_总蛋白",
+      "confidence": 0.8645162502486936,
+      "quality_adjusted_confidence": 0.7564517189676069,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.9631885009947745,
+        "mediation_support": 1.1588765,
+        "expert_direction": 0.36000000000000004
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.24079712524869362,
+        "mediation_support": 0.289719125,
+        "expert_direction": 0.054000000000000006
+      },
+      "is_core_edge": true
+    },
+    "检验_尿酸 -> 检验_碳酸氢盐": {
+      "source": "检验_尿酸",
+      "target": "检验_碳酸氢盐",
+      "confidence": 0.7095375637824267,
+      "quality_adjusted_confidence": 0.6208453683096233,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.510342755129707,
+        "mediation_support": 1.0878074999999998,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.12758568878242674,
+        "mediation_support": 0.27195187499999995,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "疾病_糖尿病 -> 疾病_高尿酸血症": {
+      "source": "疾病_糖尿病",
+      "target": "疾病_高尿酸血症",
+      "confidence": 0.7974648461106659,
+      "quality_adjusted_confidence": 0.6977817403468327,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.7113990844426633,
+        "mediation_support": 1.2384603,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.17784977111066583,
+        "mediation_support": 0.309615075,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "检验_尿酸 -> 检验_镁": {
+      "source": "检验_尿酸",
+      "target": "检验_镁",
+      "confidence": 0.6637852554266066,
+      "quality_adjusted_confidence": 0.5808120984982807,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.29679562170642615,
+        "mediation_support": 1.1183454000000002,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.07419890542660654,
+        "mediation_support": 0.27958635000000004,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "疾病_糖尿病 -> 药物_盐酸羟考酮缓释片": {
+      "source": "疾病_糖尿病",
+      "target": "药物_盐酸羟考酮缓释片",
+      "confidence": 0.7049799744275107,
+      "quality_adjusted_confidence": 0.6168574776240718,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.22212449771004278,
+        "mediation_support": 1.2497954,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.055531124427510695,
+        "mediation_support": 0.31244885,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "疾病_糖尿病 -> 药物_阿卡波糖片": {
+      "source": "疾病_糖尿病",
+      "target": "药物_阿卡波糖片",
+      "confidence": 0.8101379612043758,
+      "quality_adjusted_confidence": 0.7088707160538288,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.6825323448175034,
+        "mediation_support": 1.2100195,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.17063308620437584,
+        "mediation_support": 0.302504875,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "药物_硫酸氢氯吡格雷片 -> 药物_苯磺酸氨氯地平片": {
+      "source": "药物_硫酸氢氯吡格雷片",
+      "target": "药物_苯磺酸氨氯地平片",
+      "confidence": 0.6797169809697869,
+      "quality_adjusted_confidence": 0.5947523583485635,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.8,
+        "parameter_fitting": 0.36533482387914784,
+        "mediation_support": 1.1135331,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.27999999999999997,
+        "parameter_fitting": 0.09133370596978696,
+        "mediation_support": 0.278383275,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "疾病_高血压 -> 检验_钾": {
+      "source": "疾病_高血压",
+      "target": "检验_钾",
+      "confidence": 0.6449858609363173,
+      "quality_adjusted_confidence": 0.5643626283192776,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.42655899374526873,
+        "mediation_support": 1.09738445,
+        "expert_direction": 0.36000000000000004
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.10663974843631718,
+        "mediation_support": 0.2743461125,
+        "expert_direction": 0.054000000000000006
+      },
+      "is_core_edge": true
+    },
+    "疾病_高脂血症 -> 疾病_反流性食管炎": {
+      "source": "疾病_高脂血症",
+      "target": "疾病_反流性食管炎",
+      "confidence": 0.6439300107497649,
+      "quality_adjusted_confidence": 0.5634387594060443,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.41991824299905955,
+        "mediation_support": 1.1958018,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.10497956074976489,
+        "mediation_support": 0.29895045,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "药物_阿托伐他汀钙片 -> 疾病_高脂血症": {
+      "source": "药物_阿托伐他汀钙片",
+      "target": "疾病_高脂血症",
+      "confidence": 0.7650470550047872,
+      "quality_adjusted_confidence": 0.6694161731291888,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.8803864200191487,
+        "mediation_support": 1.1958018,
+        "expert_direction": 0.24
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.22009660500478717,
+        "mediation_support": 0.29895045,
+        "expert_direction": 0.036
+      },
+      "is_core_edge": true
+    },
+    "疾病_高脂血症 -> 药物_阿托伐他汀钙片": {
+      "source": "疾病_高脂血症",
+      "target": "药物_阿托伐他汀钙片",
+      "confidence": 0.6943967879832604,
+      "quality_adjusted_confidence": 0.6075971894853529,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.547952351933042,
+        "mediation_support": 1.1616348,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.1369880879832605,
+        "mediation_support": 0.2904087,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "疾病_高脂血症 -> 疾病_动脉硬化": {
+      "source": "疾病_高脂血症",
+      "target": "疾病_动脉硬化",
+      "confidence": 0.741310394028605,
+      "quality_adjusted_confidence": 0.6486465947750294,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.8142253761144199,
+        "mediation_support": 1.1910162,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.20355634402860498,
+        "mediation_support": 0.29775405,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "检验_钠 -> 检验_氯": {
+      "source": "检验_钠",
+      "target": "检验_氯",
+      "confidence": 0.672484419274695,
+      "quality_adjusted_confidence": 0.5884238668653582,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.5721264770987802,
+        "mediation_support": 1.1578112,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.14303161927469504,
+        "mediation_support": 0.2894528,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "疾病_反流性食管炎 -> 疾病_糖尿病": {
+      "source": "疾病_反流性食管炎",
+      "target": "疾病_糖尿病",
+      "confidence": 0.658360739693429,
+      "quality_adjusted_confidence": 0.5760656472317504,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.5208888087737161,
+        "mediation_support": 1.15255415,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.13022220219342903,
+        "mediation_support": 0.2881385375,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "检验_尿酸 -> 检验_磷": {
+      "source": "检验_尿酸",
+      "target": "检验_磷",
+      "confidence": 0.6732553598918067,
+      "quality_adjusted_confidence": 0.589098439905331,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.5933334395672271,
+        "mediation_support": 1.139688,
+        "expert_direction": 0.2
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.14833335989180677,
+        "mediation_support": 0.284922,
+        "expert_direction": 0.03
+      },
+      "is_core_edge": true
+    },
+    "检验_尿酸 -> 药物_硫酸氢氯吡格雷片": {
+      "source": "检验_尿酸",
+      "target": "药物_硫酸氢氯吡格雷片",
+      "confidence": 0.6111156504787008,
+      "quality_adjusted_confidence": 0.5347261941688631,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.6,
+        "parameter_fitting": 0.32292950191480285,
+        "mediation_support": 1.1135331,
+        "expert_direction": 0.27999999999999997
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.21,
+        "parameter_fitting": 0.08073237547870071,
+        "mediation_support": 0.278383275,
+        "expert_direction": 0.041999999999999996
+      },
+      "is_core_edge": true
+    },
+    "检验_总蛋白 -> 疾病_高血压": {
+      "source": "检验_总蛋白",
+      "target": "疾病_高血压",
+      "confidence": 0.6055126183333563,
+      "quality_adjusted_confidence": 0.5298235410416868,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.4995574233334251,
+        "mediation_support": 1.1584930500000001,
+        "expert_direction": 0.34
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.12488935583335628,
+        "mediation_support": 0.28962326250000003,
+        "expert_direction": 0.051000000000000004
+      },
+      "is_core_edge": true
+    },
+    "疾病_高血压 -> 药物_阿卡波糖片": {
+      "source": "疾病_高血压",
+      "target": "药物_阿卡波糖片",
+      "confidence": 0.6220422383712567,
+      "quality_adjusted_confidence": 0.5442869585748497,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.5416759034850268,
+        "mediation_support": 1.1584930500000001,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.1354189758712567,
+        "mediation_support": 0.28962326250000003,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "药物_阿卡波糖片 -> 疾病_高血压": {
+      "source": "药物_阿卡波糖片",
+      "target": "疾病_高血压",
+      "confidence": 0.6002191825315579,
+      "quality_adjusted_confidence": 0.5251917847151132,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.4950977301262318,
+        "mediation_support": 1.201779,
+        "expert_direction": 0.24
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.12377443253155795,
+        "mediation_support": 0.30044475,
+        "expert_direction": 0.036
+      },
+      "is_core_edge": true
+    },
+    "疾病_混合痔 -> 检验_尿酸": {
+      "source": "疾病_混合痔",
+      "target": "检验_尿酸",
+      "confidence": 0.615346626868988,
+      "quality_adjusted_confidence": 0.5384282985103646,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.5520789074759519,
+        "mediation_support": 1.1333076,
+        "expert_direction": 0.36000000000000004
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.13801972686898797,
+        "mediation_support": 0.2833269,
+        "expert_direction": 0.054000000000000006
+      },
+      "is_core_edge": true
+    },
+    "检验_钠 -> 药物_阿司匹林肠溶片": {
+      "source": "检验_钠",
+      "target": "药物_阿司匹林肠溶片",
+      "confidence": 0.6150563205783247,
+      "quality_adjusted_confidence": 0.5381742805060341,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.5987150323132987,
+        "mediation_support": 1.13351025,
+        "expert_direction": 0.27999999999999997
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.14967875807832468,
+        "mediation_support": 0.2833775625,
+        "expert_direction": 0.041999999999999996
+      },
+      "is_core_edge": true
+    },
+    "疾病_糖尿病 -> 药物_阿司匹林肠溶片": {
+      "source": "疾病_糖尿病",
+      "target": "药物_阿司匹林肠溶片",
+      "confidence": 0.6871626725938631,
+      "quality_adjusted_confidence": 0.6012673385196302,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.7513673403754522,
+        "mediation_support": 1.2092833500000002,
+        "expert_direction": 0.38
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.18784183509386304,
+        "mediation_support": 0.30232083750000005,
+        "expert_direction": 0.056999999999999995
+      },
+      "is_core_edge": true
+    },
+    "疾病_糖尿病 -> 检验_葡萄糖": {
+      "source": "疾病_糖尿病",
+      "target": "检验_葡萄糖",
+      "confidence": 0.6418112201948967,
+      "quality_adjusted_confidence": 0.5615848176705346,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.5873732307795864,
+        "mediation_support": 1.20387165,
+        "expert_direction": 0.36000000000000004
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.1468433076948966,
+        "mediation_support": 0.3009679125,
+        "expert_direction": 0.054000000000000006
+      },
+      "is_core_edge": true
+    },
+    "检验_葡萄糖 -> 疾病_糖尿病": {
+      "source": "检验_葡萄糖",
+      "target": "疾病_糖尿病",
+      "confidence": 0.6072378148327761,
+      "quality_adjusted_confidence": 0.5313330879786791,
+      "quality_score": 0.875,
+      "dimension_scores": {
+        "structural_consistency": 0.4,
+        "parameter_fitting": 0.4264909593311041,
+        "mediation_support": 1.2384603,
+        "expert_direction": 0.34
+      },
+      "dimension_contributions": {
+        "structural_consistency": 0.13999999999999999,
+        "parameter_fitting": 0.10662273983277602,
+        "mediation_support": 0.309615075,
+        "expert_direction": 0.051000000000000004
+      },
+      "is_core_edge": true
+    }
+  },
+  "statistics": {
+    "core_edges_confidence_stats": {
+      "mean": 0.695271780607714,
+      "std": 0.08461447574842448,
+      "min": 0.6002191825315579,
+      "max": 0.8964224031634515,
+      "median": 0.6728698895832509
+    },
+    "core_edges_quality_stats": {
+      "mean": 0.875,
+      "std": 0.0,
+      "min": 0.875,
+      "max": 0.875,
+      "median": 0.875
+    }
+  }
+}
